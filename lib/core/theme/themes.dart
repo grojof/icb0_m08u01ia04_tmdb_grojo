@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import 'package:icb0_m08u01ia04_tmdb_grojo/core/theme/colors.dart';
 import 'package:icb0_m08u01ia04_tmdb_grojo/core/theme/styles.dart';
@@ -16,7 +15,7 @@ enum ButtonType {
 }
 
 class AppTheme {
-  static ThemeData lightTheme(BuildContext context) {
+  static ThemeData tmdbTheme(BuildContext context) {
     return ThemeData(
       //! CONFIGURACIÓN GENERAL
       brightness: Brightness.dark, // Tema oscuro
@@ -27,99 +26,99 @@ class AppTheme {
       colorScheme: AppColors.customColorScheme,
 
       //! TIPOGRAFÍA
-      textTheme: TextTheme(
+      textTheme: const TextTheme(
         //! Para textos de gran tamaño que requieren alta visibilidad,
         //! como títulos en pantallas de inicio o secciones destacadas //
         // Títulos principales o nombres de aplicaciones
-        displayLarge: GoogleFonts.orbitron(
+        displayLarge: TextStyle(
           fontSize: 57,
           fontWeight: FontWeight.bold,
           color: AppColors.kOnPrimary,
         ),
         // Subtítulos importantes o mensajes promocionales
-        displayMedium: GoogleFonts.orbitron(
+        displayMedium: TextStyle(
           fontSize: 45,
           fontWeight: FontWeight.bold,
           color: AppColors.kOnPrimary,
         ),
         // Encabezados destacados pero menos prominentes
-        displaySmall: GoogleFonts.orbitron(
+        displaySmall: TextStyle(
           fontSize: 36,
           fontWeight: FontWeight.bold,
           color: AppColors.kOnPrimary,
         ),
         //! Para encabezados y títulos en secciones y páginas //
         // Encabezados de secciones principales
-        headlineLarge: GoogleFonts.roboto(
+        headlineLarge: TextStyle(
           fontSize: 32,
           fontWeight: FontWeight.w600,
           color: AppColors.kOnSurface,
         ),
         // Títulos de subsecciones o categorías
-        headlineMedium: GoogleFonts.roboto(
+        headlineMedium: TextStyle(
           fontSize: 28,
           fontWeight: FontWeight.w600,
           color: AppColors.kOnSurface,
         ),
         // Encabezados de contenido o artículos
-        headlineSmall: GoogleFonts.roboto(
+        headlineSmall: TextStyle(
           fontSize: 24,
           fontWeight: FontWeight.w600,
           color: AppColors.kOnSurface,
         ),
         //! Para títulos y encabezados de nivel medio, como en tarjetas o diálogos //
         // Títulos en diálogos y modales
-        titleLarge: GoogleFonts.roboto(
+        titleLarge: TextStyle(
           fontSize: 22,
           fontWeight: FontWeight.w500,
           color: AppColors.kOnSurface,
         ),
         // Encabezados en tarjetas y listas
-        titleMedium: GoogleFonts.roboto(
+        titleMedium: TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.w500,
           color: AppColors.kOnSurface,
         ),
         // Subtítulos o encabezados secundarios.
-        titleSmall: GoogleFonts.roboto(
+        titleSmall: TextStyle(
           fontSize: 14,
           fontWeight: FontWeight.w500,
           color: AppColors.kOnSurface,
         ),
         //! Para el contenido principal y textos informativos //
         // Texto de párrafo estándar en artículos o descripciones
-        bodyLarge: GoogleFonts.archivo(
+        bodyLarge: TextStyle(
           fontSize: 18,
           fontWeight: FontWeight.normal,
           color: AppColors.kOnSurface,
         ),
         // Texto secundario o detalles adicionales
-        bodyMedium: GoogleFonts.archivo(
+        bodyMedium: TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.normal,
           color: AppColors.kOnSurface,
         ),
         // Notas al pie o texto menos importante
-        bodySmall: GoogleFonts.archivo(
+        bodySmall: TextStyle(
           fontSize: 14,
           fontWeight: FontWeight.normal,
           color: AppColors.kOnSurface,
         ),
         //! Para etiquetas y textos en componentes interactivos //
         // Texto en botones principales
-        labelLarge: GoogleFonts.archivo(
+        labelLarge: TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.w500,
           color: AppColors.kOnPrimary,
         ),
         // Etiquetas en campos de entrada y botones secundarios
-        labelMedium: GoogleFonts.archivo(
+        labelMedium: TextStyle(
           fontSize: 14,
           fontWeight: FontWeight.w500,
           color: AppColors.kOnSurface,
         ),
         // Texto en chips, badges o elementos pequeños
-        labelSmall: GoogleFonts.archivo(
+        labelSmall: TextStyle(
           fontSize: 12,
           fontWeight: FontWeight.w500,
           color: AppColors.kOnSurface,
